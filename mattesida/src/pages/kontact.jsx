@@ -2,10 +2,11 @@
 import {render} from 'solid-js/web';
 
 import 'normalize.css';
+import '../styles/common.css';
 import '../styles/contact.css';
-import Navbar from "../components/navbar";
+import Navbar from "../components/navbar/navbar";
 
-render(<>
+render(() => <>
     <header>
         <Navbar/>
     </header>

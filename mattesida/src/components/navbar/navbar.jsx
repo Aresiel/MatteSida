@@ -1,8 +1,12 @@
 import {createSignal} from "solid-js";
+import './style.css'
 
 const [pages, setPages] = createSignal([
-    { name: "Formulas", path: "formulas.html"},
-    { name: "Contact", path: "contact.html"},
+    { name: "iρΣμm", path: "index.html"},
+    { name: "Roliga Formler", path: "formler.html"},
+    { name: "Intressant Teori", path: "teori.html"},
+    { name: "Apodiktiska Bevis", path: "bevis.html"},
+    { name: "Kontakt", path: "kontakt.html"}
 ])
 
 export default () =>

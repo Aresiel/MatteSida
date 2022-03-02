@@ -1,0 +1,36 @@
+nav, ul {
+    display: flex;
+    list-style: none;
+    background-color: #7D7C9D;
+    align-items: center;
+    height: 2.5rem;
+}
+
+li {
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #EAEAEA;
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+li:first-child {
+    font-family: 'Cutive', sans-serif;
+    color: #2C2C3A;
+    font-size: 1.7rem;
+}
+
+a {
+    color: inherit;
+    height: inherit;
+    text-decoration: none;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+a:hover{
+    background-color: rgba(255,255,255,0.1);
+}
