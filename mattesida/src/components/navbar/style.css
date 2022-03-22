@@ -34,3 +34,47 @@ a {
 a:hover{
     background-color: rgba(255,255,255,0.1);
 }
+
+@media screen and (min-width: 681px){
+    li:nth-child(1) > a:nth-child(1) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 680px){
+    nav, ul {
+        flex-direction: column;
+        height: unset;
+    }
+
+    nav, ul, li {
+        width: 100%;
+    }
+
+    li > a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .hidden > li:not(:nth-child(1)) {
+        display: none;
+    }
+
+    li:nth-child(1) {
+        display: flex;
+    }
+
+    li:nth-child(1) > a:nth-child(1){
+        flex: 1;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    li:nth-child(1) > a:nth-child(1):hover {
+        cursor: pointer;
+    }
+
+}
