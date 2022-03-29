@@ -1,6 +1,8 @@
 import {createSignal} from "solid-js";
 import './style.css'
 
+
+// De olika sidorna
 const [pages, setPages] = createSignal([
     { name: "Roliga Formler", path: "formler.html"},
     { name: "Intressant Teori", path: "teori.html"},
@@ -16,7 +18,7 @@ const toggleMenu = () => {
 export default () =>
     <nav>
         <ul className={"hidden"}>
-            <li>
+            <li> {/* Hem-knappen är speciell och ligger därför separat */}
                 <a onClick={toggleMenu}>☰</a>
                 <a href="index.html">iρΣμm</a>
             </li>
