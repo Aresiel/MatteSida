@@ -1,4 +1,4 @@
-nav, nav > ul, li, a {
+nav, nav > ul, nav > ul > li, a {
     font-family: 'Ropa Sans', sans-serif;
 }
 
@@ -10,7 +10,7 @@ nav, nav > ul {
     height: 2.5rem;
 }
 
-li {
+nav > ul > li {
     font-family: 'Ropa Sans', sans-serif;
     font-size: 1.5rem;
     color: #EAEAEA;
@@ -19,7 +19,7 @@ li {
     align-items: center;
 }
 
-li:first-child {
+nav > ul > li:first-child {
     font-family: 'Cutive', sans-serif;
     color: #2C2C3A;
     font-size: 1.7rem;
@@ -40,7 +40,7 @@ a:hover{
 }
 
 @media screen and (min-width: 681px){
-    li:nth-child(1) > a:nth-child(1) {
+    nav > ul > li:nth-child(1) > a:nth-child(1) {
         display: none;
     }
 }
@@ -51,11 +51,11 @@ a:hover{
         height: unset;
     }
 
-    nav, nav > ul, li {
+    nav, nav > ul, nav > ul > li {
         width: 100%;
     }
 
-    li > a {
+    nav > ul > li > a {
         display: flex;
         justify-content: center;
         width: 100%;
@@ -63,21 +63,21 @@ a:hover{
         padding-bottom: 0.5rem;
     }
 
-    .hidden > li:not(:nth-child(1)) {
+    .hidden > nav > ul > li:not(:nth-child(1)) {
         display: none;
     }
 
-    li:nth-child(1) {
+    nav > ul > li:nth-child(1) {
         display: flex;
     }
 
-    li:nth-child(1) > a:nth-child(1){
+    nav > ul > li:nth-child(1) > a:nth-child(1){
         flex: 1;
         padding-left: 1rem;
         padding-right: 1rem;
     }
 
-    li:nth-child(1) > a:nth-child(1):hover {
+    nav > ul > li:nth-child(1) > a:nth-child(1):hover {
         cursor: pointer;
     }
 

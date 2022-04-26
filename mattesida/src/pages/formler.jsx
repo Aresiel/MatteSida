@@ -9,6 +9,12 @@ import Navbar from "../components/navbar/navbar";
 
 console.log(getArticles("formulas"))
 
+function summarize(text){
+    let max_length = 150;
+    if(text.length <= max_length) return text;
+    return text.substr(0,max_length-3) + "..."
+}
+
 render(() => <>
     <header>
         <Navbar/>
@@ -19,6 +25,7 @@ render(() => <>
             <For each={getArticles("formulas")[0]()}>{(article, i) =>
                 <li>
                     <p>{article.name}</p>
+                    <p>{summarize(article.contents)}</p>
                 </li>
             }</For>
         </ul>
