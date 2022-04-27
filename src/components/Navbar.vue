@@ -1,29 +1,44 @@
 <template>
   <div>
-    <b-nav pills>
-      <b-nav-item href="/">iρΣμm</b-nav-item>
-      <b-nav-item href="/formler">Roliga Formler</b-nav-item>
-      <b-nav-item href="/testpage">Intressant Teori</b-nav-item>
-      <b-nav-item href="/testpage">Apodiktiska Bevis</b-nav-item>
-      <b-nav-item href="testpage">Kontakt</b-nav-item>
-    </b-nav>
+    <b-navbar toggleable="lg">
+
+      <b-navbar-brand href="/">iρΣμm</b-navbar-brand>
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+      <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav>
+          <b-nav-item href="/formler">Roliga Formler</b-nav-item>
+          <b-nav-item href="/teori">Intressant Teori</b-nav-item>
+          <b-nav-item href="/bevis">Apodiktiska Bevis</b-nav-item>
+          <b-nav-item href="/kontakt">Kontakt</b-nav-item>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
   </div>
 </template>
 
-<style lang="css">
-  .nav {
+<style lang="css" scoped>
+  .navbar {
     background-color: #7D7C9D;
+  }
+
+  .navbar-brand {
+    color: #2C2C3A;
+    font-size: 2rem;
+    font-family: 'Cutive', serif;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
     font-family: 'Ropa Sans', sans-serif;
     font-size: 1.5rem;
+    color: #fff;
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #ddd;
   }
 
   a, a:hover {
     color: #EAEAEA;
   }
-
-  .nav-item:hover {
-    background-color: rgba(0,0,0,0.11)
-  }
-
-
 </style>
