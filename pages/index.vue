@@ -16,7 +16,20 @@
   </div>
 </template>
 
-<style lang="css" scoped>
+<style lang="css">
+
+main {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 576px) {
+  main {
+    margin-top: 8rem;
+  }
+}
+
 </style>
 
 <script>
