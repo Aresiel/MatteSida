@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'mattesida',
+    title: 'iρΣμm',
     htmlAttrs: {
       lang: 'en',
     },
@@ -12,15 +12,26 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [
+      {
+        src: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_HTML"
+      }
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    "@/assets/style/main.css"
+    "@/common/style/main.css"
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+    {
+      src: '@/plugins/vue-mathjax-next.js',
+      ssr: true,
+      mode: 'client'
+    }
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

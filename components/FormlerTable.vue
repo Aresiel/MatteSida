@@ -1,24 +1,22 @@
 <template>
   <div>
-    <b-table hover :items="items"></b-table>
+    <b-list-group>
+      <b-list-group-item>Binomialsatsen</b-list-group-item>
+      <b-list-group-item active>Faktorsatsen</b-list-group-item>
+      <b-list-group-item>Shoelace Formeln</b-list-group-item>
+    </b-list-group>
   </div>
 </template>
 
 <script>
-export default {
-  name: "FormlerTable",
-  data() {
-    return {
-      items: [
-        { titel: "Binomialsatsen", datum: '19/4/2022'},
-        { titel: "Binomialsatsen", datum: '19/4/2022'},
-        { titel: "Binomialsatsen", datum: '19/4/2022'},
-      ]
-    }
-  }
-}
 </script>
 
 <style scoped>
+.list-group-item {
+  cursor: pointer;
+}
 
+.list-group-item:hover:not(.active) {
+  background-color: #ececec;
+}
 </style>

@@ -4,8 +4,7 @@
       <Navbar/>
     </header>
     <main>
-      <div>
-        <b-button v-b-toggle.sidebar-1>Toggle Sidebar</b-button>
+      <nav>
         <b-sidebar
           id="sidebar-1"
           title="Formler"
@@ -14,16 +13,32 @@
         >
         <FormlerTable/>
         </b-sidebar>
-      </div>
-      <p>Inbilla dig formler här tack!</p>
+      </nav>
+      <b-container>
+        <b-button v-b-toggle.sidebar-1>Formler</b-button>
+        <p>Inbilla dig formler här tack!</p>
+        <vue-mathjax formula="$$42-16i$$"></vue-mathjax>
+      </b-container>
+
     </main>
   </div>
 </template>
 
 <script>
-
 </script>
 
 <style scoped>
+
+main {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 576px) {
+  main {
+    margin-top: 6rem;
+  }
+}
 
 </style>
