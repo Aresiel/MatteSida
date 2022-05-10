@@ -30,6 +30,11 @@ export default {
       src: '@/plugins/vue-mathjax-next.js',
       ssr: true,
       mode: 'client'
+    },
+    {
+      src: '@/plugins/bootstrap-icons.js',
+      ssr: true,
+      mode: 'client'
     }
   ],
 
