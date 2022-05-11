@@ -12,12 +12,13 @@
           shadow
           backdrop
         >
+          <LazyFormlerNav/>
         </b-sidebar>
       </nav>
       <b-container fluid>
         <b-row>
           <b-col id="navColumn">
-            <FormlerNav/>
+            <LazyFormlerNav/>
           </b-col>
           <b-col>
             <Article/>
@@ -34,18 +35,23 @@
 
 <style scoped>
 main {
-  margin-left: 0.5rem;
   margin-right: 0.5rem;
   margin-top: 1rem;
 }
 
 #navColumn {
   display: none;
+  width: 20%;
+  flex-basis: min-content;
+  flex-grow: unset;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   main {
     margin-top: 6rem;
+  }
+  .container-fluid {
+    padding-left: 0;
   }
   #navColumn {
     display: initial;
