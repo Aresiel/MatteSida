@@ -46,6 +46,13 @@ main {
   flex-grow: unset;
 }
 
+.btn {
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  color: black;
+  background-color: white;
+}
+
 @media (min-width: 992px) {
   main {
     margin-top: 6rem;
