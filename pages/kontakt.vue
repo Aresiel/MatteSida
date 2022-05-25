@@ -43,7 +43,6 @@
               </b-form-group>
 
               <b-button type="submit" variant="primary">Skicka</b-button>
-              <b-button type="reset" variant="danger">Töm</b-button>
             </b-form>
           </b-col>
         </b-row>

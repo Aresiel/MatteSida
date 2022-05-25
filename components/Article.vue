@@ -19,7 +19,7 @@
             congue ut, sagittis at nisl. Donec eu facilisis nibh, convallis aliquet magna. Nulla vel diam risus. Nullam
             ultrices velit non vulputate placerat. Morbi dictum nunc in viverra feugiat. Vivamus mollis maximus
             interdum.</p>
-          <vue-mathjax class="formula" formula="$p(a)=0 \implies p(x)=(x-a)q(x)$"></vue-mathjax>
+          <vue-mathjax class="formula" formula="$p(x)= a_1x^n+a_2x^{n-1}+\cdots+a_{n-1}x+a_{n}$"></vue-mathjax>
           <p>Pellentesque eu lacus sed nisi venenatis tempus. Orci varius natoque penatibus et magnis dis parturient montes,
             nascetur ridiculus mus. Aenean ac tortor eu turpis porttitor fermentum sed dictum enim. Sed ut dignissim purus.
             Aenean convallis tellus nunc, sed egestas nulla rutrum ac. In et sapien et odio faucibus porttitor. Morbi
@@ -27,6 +27,7 @@
             non. Cras magna justo, accumsan sit amet mi fermentum, accumsan tempus tellus. Praesent varius metus quis enim
             volutpat congue. Nulla vel ex orci. Mauris viverra, quam a vestibulum tempor, tellus velit sollicitudin eros, et
             elementum turpis lectus quis elit. Quisque molestie ac lectus quis iaculis.</p>
+          <vue-mathjax class="formula" formula="$p(a)=0 \implies p(x)=(x-a)q(x)$"></vue-mathjax>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lectus bibendum, iaculis justo scelerisque,
             fringilla tellus. Pellentesque eget tellus efficitur purus porta lobortis. Integer dignissim blandit urna at
             porta. Morbi sit amet quam dui. Sed pellentesque quam pharetra, dictum massa non, varius erat. Nunc quis
@@ -47,7 +48,7 @@ export default {
   data() {
     return {
       article: {
-        title: "Lorem ipsum dolor sit amet",
+        title: "Faktorsatsen",
         author: "Sven Svensson",
         date: "12/3/2022",
         content: "placeholder" // verkligt content hade gått här men det skulle se förskräckligt ut utan en faktiskt databas och så
@@ -59,9 +60,15 @@ export default {
 
 <style scoped>
 
+p, h1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .formula {
   display: flex;
   justify-content: center;
+  font-size: 1.3em;
 }
 
 .articleText {

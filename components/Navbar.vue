@@ -8,8 +8,8 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <b-nav-item href="/formler">Roliga Formler</b-nav-item>
-          <b-nav-item href="/teori">Intressant Teori</b-nav-item>
-          <b-nav-item href="/bevis">Apodiktiska Bevis</b-nav-item>
+          <b-nav-item href="/formler">Intressant Teori</b-nav-item>
+          <b-nav-item href="/formler">Apodiktiska Bevis</b-nav-item>
           <b-nav-item href="/kontakt">Kontakt</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
